@@ -43,6 +43,7 @@ $ cat <<EOF> postgres-values.yaml
 postgresqlPassword: foo
 postgresqlDatabase: bar
 EOF
+
 $ mahakam create app --cluster-name kalimantan --app-name psql --chart maha-incubator
 /mahakam-postgres --values ./postgres-values.yaml
 Creating your application...
@@ -87,15 +88,15 @@ You should now be able to access the getting started app with kubectl proxy.
 This is a Flask+PostgreSQL simple web application. This application can add and retrieve book details.
 
 * Get all data
-http://<get-started-endpoint>/getall
+http://get-started-endpoint/getall
   
 * *Get by id 
 (for id=1)  
-http://<get-started-endpoint>/get/1
+http://get-started-endpoint/get/1
    
 * *Add through html form
-http://<get-started-endpoint>/add/form
+http://get-started-endpoint/add/form
 
 * *Add a book
 (for name=HarryPotter, author=JKRowling, published=2003)  
-http://<get-started-endpoint>/add?name=HarryPotter&author=JKRowling&published=2003
+http://get-started-endpoint/add?name=HarryPotter&author=JKRowling&published=2003
