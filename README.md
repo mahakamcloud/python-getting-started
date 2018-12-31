@@ -90,13 +90,13 @@ This is a Flask+PostgreSQL simple web application. This application can add and 
 * Get all data
 http://get-started-endpoint/getall
   
-* *Get by id 
+* Get by id 
 (for id=1)  
 http://get-started-endpoint/get/1
    
-* *Add through html form
+* Add through html form
 http://get-started-endpoint/add/form
 
-* *Add a book
+* Add a book
 (for name=HarryPotter, author=JKRowling, published=2003)  
 http://get-started-endpoint/add?name=HarryPotter&author=JKRowling&published=2003
